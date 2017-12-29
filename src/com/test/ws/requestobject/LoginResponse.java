@@ -1,8 +1,14 @@
 package com.test.ws.requestobject;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
+@Entity
+@Table(name="users")
 public class LoginResponse {
 
 	private String uId;
@@ -12,12 +18,15 @@ public class LoginResponse {
 	private String name;
 	private String email;
 	
+	@Id
+	@GeneratedValue
 	public String getuId() {
 		return uId;
 	}
 	public void setuId(String uId) {
 		this.uId = uId;
 	}
+
 	public String getuType() {
 		return uType;
 	}
@@ -48,5 +57,4 @@ public class LoginResponse {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-		
 }
