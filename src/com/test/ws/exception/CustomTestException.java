@@ -17,7 +17,7 @@ public class CustomTestException {
 	
 	
 	public static String getRootCauseStackTraceAsString(Throwable args) {
-		String[] trace =  ExceptionUtils.getRootCauseStackTrace(args);
-		return convertToString(trace);
+		String trace =  ExceptionUtils.getStackTrace(args);
+		return trace;
 	}
 }
