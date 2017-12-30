@@ -1,0 +1,39 @@
+<component name="libraryTable">
+  <library name="ws">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/ldapjdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/spring-web-3.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/stax2-api-3.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/spring-expression-3.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/geronimo-servlet_3.0_spec-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/jackson-all-1.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/spring-core-3.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/spring-web-3.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/spring-beans-3.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/jettison-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/httpcore-4.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/httpasyncclient-4.0-beta3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/FastInfoset-1.2.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/jaxb-api-2.2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/httpcore-nio-4.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/spring-context-3.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/geronimo-jms_1.1_spec-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-manifest.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/jaxb-impl-2.2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/slf4j-api-1.6.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/xmlschema-core-2.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/spring-aop-3.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/neethi-3.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/geronimo-jaxws_2.2_spec-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/wsdl4j-1.6.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/httpclient-4.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/jetty-all.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/javax.ws.rs-api-2.0-m10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/woodstox-core-asl-4.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/commons-logging-1.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
