@@ -1,7 +1,10 @@
 package com.test.ws.datamanager.impl;
 
+import java.math.BigInteger;
 import java.sql.Timestamp;
+import java.util.List;
 
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -11,38 +14,55 @@ import com.test.ws.exception.CommandException;
 import com.test.ws.exception.InfrastructureException;
 import com.test.ws.requestobject.LoginResponse;
 import com.test.ws.utils.HibernateUtil;
+import com.test.ws.utils.TokenGenerator;
 
 public class LoginDaoImpl implements LoginDao {
 
 	@Override
 	public LoginResponse validateLogin(String email, String password) throws CommandException {
 
+		Long user_id = 0l;
+		List<Object[]> list = null;
+		LoginResponse loginResponse = new LoginResponse();
+		String queryString = "";
+		
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction tx = session.beginTransaction();
-		LoginResponse loginResponse = new LoginResponse();
 		
 		try {
-			/*Query query = session
-					.createSQLQuery("select * from users where email='" + email + "' and password='" + password + "'");
-			List<Object[]> list = query.list();
+			
+			String token = TokenGenerator.uniqueUUID();
+			
+			queryString = "select * from users where email='" + email + "' and password='" + password + "'";
+			Query query = session.createSQLQuery(queryString);
+			list = query.list();
 
 			if (!list.isEmpty()) {
-				Long user_id = 0l;
-				
 				for (Object[] o : list) {
-					user_id = ((Long) o[0]).longValue();
+					user_id = ((BigInteger) o[0]).longValue();
 				}
-				String token = TokenGenerator.generateToken(email);
-				query = session
-						.createSQLQuery("update users set auth_token='" + token + "' where id='" + user_id + "'");
+				
+				queryString = "update users set auth_token='" + token + "',updated_at='"+getFormatedDate()+"' where id='" + user_id + "'";
+				query = session.createSQLQuery(queryString);
 				query.executeUpdate();
 				
-			}*/
-			
-			loginResponse.setuId("1");
-			loginResponse.setuType("1");
-			loginResponse.setName("name");
-			loginResponse.setuTypeName("XYZ");
+				queryString = "select username,uType,uTypeName from users where id='"+user_id+"'";
+				query = session.createSQLQuery(queryString);
+				list = query.list();
+				
+				if (!list.isEmpty()) {
+					for (Object[] o : list) {
+						loginResponse.setName(((String) o[0]).toString());
+						loginResponse.setuType(((Integer) o[1]).toString());
+						loginResponse.setuTypeName(((String) o[2]).toString());
+						loginResponse.setuId(String.valueOf(user_id));
+						loginResponse.setToken(token);
+						loginResponse.setEmail(email);
+					}
+				}
+			}else{
+				return null;
+			}
 			tx.commit();
 		} catch (InfrastructureException ex) {
 			tx.rollback();

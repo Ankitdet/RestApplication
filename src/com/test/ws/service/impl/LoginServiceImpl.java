@@ -2,6 +2,7 @@ package com.test.ws.service.impl;
 
 import java.text.ParseException;
 
+import com.test.ws.constant.ResultCode;
 import com.test.ws.datamanager.impl.LoginDaoImpl;
 import com.test.ws.exception.BusinessException;
 import com.test.ws.exception.CommandException;
@@ -17,25 +18,24 @@ public class LoginServiceImpl implements LoginService {
 	@Override
 	public Response validateLogin(String email,String password) throws CommandException, ParseException {
 		
-		Response response = null;
 		LoginResponse loginResponse = null;
 		LoginDaoImpl loginDao = new LoginDaoImpl();
 		Logger.logDebug("Test", "Enter into create method of ");
 		
 		try {
 			 loginResponse = loginDao.validateLogin(email,password);
+			 if(loginResponse == null){
+				 return new Response(ResultCode.NOT_FOUND_404.code, "Invalid credential!", null, "email or password doesn't match",loginResponse);
+			 }
 
 		} catch (InfrastructureException ex) {
-			// Rethrow as a checked exception
-			//HibernateUtil.rollbackTransaction();
 			throw new CommandException(ex);
 
 		} catch (BusinessException ex) {
-			// Rethrow as a checked exception
 			throw new CommandException(ex);
 		} finally {
 			
 		}
-		return new Response(200, "Login successfully", null, null,loginResponse);
+		return new Response(ResultCode.SUCCESS_200.code, "Login successfully", null, null,loginResponse);
 	}
 }

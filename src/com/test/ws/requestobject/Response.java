@@ -13,22 +13,16 @@ public class Response {
 	private String  message;
 	private String  TransactionDate;
 	private String  reason;
-	private Object dataList;
-	
-	
+	private Object data;
+
 	@XmlElement(name="data")
-	public Object getDataList() {
-		return dataList;
+	public Object getData() {
+		return data;
 	}
-	public void setDataList(Object dataList) {
-		this.dataList = dataList;
+	public void setData(Object data) {
+		this.data = data;
 	}
-	
-	
-	
-	public Response(){
-		
-	}
+	public Response(){}
 	private String getCurrentTimeStemp(String str) throws ParseException{
 		
 		SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
@@ -40,7 +34,7 @@ public class Response {
 		this.message = message;
 		this.TransactionDate = getCurrentTimeStemp(date);
 		this.reason = reason;
-		this.dataList =  list;
+		this.data =  list;
 	}
 	
 	@XmlElement(name="status")
@@ -82,7 +76,7 @@ public class Response {
 		builder.append(", message=");
 		builder.append(message);
 		builder.append(", data=");
-		builder.append(dataList);
+		builder.append(data);
 		builder.append(", TransactionDate=");
 		builder.append(TransactionDate);
 		builder.append(", reason=");
