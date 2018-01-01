@@ -4,27 +4,28 @@ import java.math.BigInteger;
 import java.sql.Timestamp;
 import java.util.List;
 
+import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import com.test.ws.datamanager.intrf.LoginDao;
+import com.test.ws.entities.Users;
 import com.test.ws.exception.BusinessException;
 import com.test.ws.exception.CommandException;
 import com.test.ws.exception.InfrastructureException;
-import com.test.ws.requestobject.LoginResponse;
 import com.test.ws.utils.HibernateUtil;
 import com.test.ws.utils.TokenGenerator;
 
 public class LoginDaoImpl implements LoginDao {
 
 	@Override
-	public LoginResponse validateLogin(String email, String password) throws CommandException {
+	public Users validateLogin(String email, String password) throws CommandException {
 
 		Long user_id = 0l;
 		List<Object[]> list = null;
-		LoginResponse loginResponse = new LoginResponse();
 		String queryString = "";
+		Users user = new Users();
 		
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction tx = session.beginTransaction();
@@ -48,18 +49,7 @@ public class LoginDaoImpl implements LoginDao {
 				
 				queryString = "select username,uType,uTypeName from users where id='"+user_id+"'";
 				query = session.createSQLQuery(queryString);
-				list = query.list();
-				
-				if (!list.isEmpty()) {
-					for (Object[] o : list) {
-						loginResponse.setName(((String) o[0]).toString());
-						loginResponse.setuType(((Integer) o[1]).toString());
-						loginResponse.setuTypeName(((String) o[2]).toString());
-						loginResponse.setuId(String.valueOf(user_id));
-						loginResponse.setToken(token);
-						loginResponse.setEmail(email);
-					}
-				}
+				user = (Users)query.list();
 			}else{
 				return null;
 			}
@@ -73,7 +63,7 @@ public class LoginDaoImpl implements LoginDao {
 		} finally {
 			session.close();
 		}
-		return loginResponse;
+		return user;
 	}
 	
 	private Timestamp getFormatedDate() {
@@ -81,4 +71,24 @@ public class LoginDaoImpl implements LoginDao {
 		return new Timestamp(date.getTime());
 	}
 
+	@Override
+	public List<Users> getUserContactList() throws CommandException {
+		
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		List<Users> list = null;
+		
+		try{
+			Criteria crt = session.createCriteria(Users.class);
+			list = (List<Users>)crt.list();
+			System.out.println("Login response Data : "+list);
+			
+		}catch(BusinessException be){
+			
+		}catch(Exception e){
+			
+		}finally{
+			session.close();
+		}
+		return list;
+	}
 }

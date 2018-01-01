@@ -2,6 +2,7 @@ package com.test.ws.requestobject;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Collection;
 import java.util.Date;
 
 import javax.xml.bind.annotation.XmlElement;
@@ -34,7 +35,12 @@ public class Response {
 		this.message = message;
 		this.TransactionDate = getCurrentTimeStemp(date);
 		this.reason = reason;
-		this.data =  list;
+		
+		if (list instanceof Collection<?>){
+			this.data =  (Collection<?>)list;
+		}else{
+			this.data =  list;
+		}
 	}
 	
 	@XmlElement(name="status")

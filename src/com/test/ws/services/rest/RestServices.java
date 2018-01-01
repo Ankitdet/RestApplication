@@ -3,6 +3,7 @@ package com.test.ws.services.rest;
 import java.text.ParseException;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -55,4 +56,22 @@ public class RestServices {
 		}
 		return response;
 	}
+
+	@GET
+	@Path("/getContactList")
+	public Response getContactList() throws ParseException{
+		
+		LoginServiceImpl blManager = new LoginServiceImpl();
+		Response response = null;
+		Logger.logInfo(MODULE, "Method called getContactList()");
+
+		try{
+			response = blManager.getUserContactList();
+		}catch(Exception e){
+			return new Response(ResultCode.INPUT_PARAMETER_MISSING_401.code, ResultCode.INPUT_PARAMETER_MISSING_401.name, null, e.getMessage(), null);
+		}
+		return response;
+	}
 }
+
+
