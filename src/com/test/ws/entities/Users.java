@@ -5,7 +5,7 @@ package com.test.ws.entities;
 import static javax.persistence.GenerationType.IDENTITY;
 
 import java.math.BigDecimal;
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -54,8 +54,6 @@ public class Users implements java.io.Serializable {
 	private int deviceType;
 	private String deviceToken;
 	private int badgeCount;
-	private Integer utype;
-	private String utypeName;
 
 	public Users() {
 	}
@@ -126,8 +124,6 @@ public class Users implements java.io.Serializable {
 		this.deviceType = deviceType;
 		this.deviceToken = deviceToken;
 		this.badgeCount = badgeCount;
-		this.utype = utype;
-		this.utypeName = utypeName;
 	}
 
 	@Id
@@ -232,7 +228,7 @@ public class Users implements java.io.Serializable {
 		this.emailVerified = emailVerified;
 	}
 
-	@Temporal(TemporalType.TIMESTAMP)
+	@Temporal(TemporalType.DATE)
 	@Column(name = "birth_date", nullable = false, length = 19)
 	public Date getBirthDate() {
 		return this.birthDate;
@@ -369,23 +365,4 @@ public class Users implements java.io.Serializable {
 	public void setBadgeCount(int badgeCount) {
 		this.badgeCount = badgeCount;
 	}
-
-	@Column(name = "uType")
-	public Integer getUtype() {
-		return this.utype;
-	}
-
-	public void setUtype(Integer utype) {
-		this.utype = utype;
-	}
-
-	@Column(name = "uTypeName", length = 20)
-	public String getUtypeName() {
-		return this.utypeName;
-	}
-
-	public void setUtypeName(String utypeName) {
-		this.utypeName = utypeName;
-	}
-
 }
