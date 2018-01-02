@@ -858,8 +858,6 @@ ALTER TABLE `user_rules`
 ALTER TABLE `user_rules_menu`
   ADD CONSTRAINT `user_rules_menu_ibfk_1` FOREIGN KEY (`user_rules_id`) REFERENCES `user_rules` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
   
--- add two column  
-ALTER TABLE users ADD (uType int,uTypeName varchar(20));
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
