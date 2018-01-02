@@ -8,4 +8,6 @@ import com.test.ws.requestobject.Response;
 public interface LoginService {
 
 	Response validateLogin(String email, String password) throws CommandException, ParseException;
+
+    Response getBirthday(String cakeId);
 }

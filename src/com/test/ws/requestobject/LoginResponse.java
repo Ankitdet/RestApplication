@@ -7,19 +7,18 @@ import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-@Entity
-@Table(name="users")
 public class LoginResponse {
 
 	private String uId;
 	private String uType;
 	private String uTypeName;
 	private String token;
-	private String name;
 	private String email;
-	
-	@Id
-	@GeneratedValue
+	private String firstName;
+	private String middleName;
+	private String lastName;
+
+
 	public String getuId() {
 		return uId;
 	}
@@ -45,16 +44,34 @@ public class LoginResponse {
 	public void setToken(String token) {
 		this.token = token;
 	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
 	public String getEmail() {
 		return email;
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getMiddleName() {
+		return middleName;
+	}
+
+	public void setMiddleName(String middleName) {
+		this.middleName = middleName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 }
