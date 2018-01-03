@@ -245,7 +245,6 @@ public class LoginDaoImpl implements LoginDao {
         return new Response(ResultCode.SUCCESS_200.code, ResultCode.SUCCESS_200.name, null, null, mandalsArrayList);
     }
 
-
     public Object setObject(Object obj) {
 
         if (obj instanceof BigInteger) {
@@ -292,5 +291,29 @@ public class LoginDaoImpl implements LoginDao {
             usersFieldDataList.add(usersFieldData);
         }
         return usersFieldDataList;
+    }
+
+    @Override
+    public Response doCreateSabha() {
+        String queryString = "";
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        List<Mandals> mandalsArrayList = new ArrayList<Mandals>();
+
+        try {
+            queryString = "insert into sabhas values(3,'parasabha',2,'2001-02-10','17:00:00','19:00:00',0,'2121121','1212121')";
+            Query query = session.createSQLQuery(queryString);
+            query.executeUpdate();
+
+        } catch (Exception e) {
+            return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, null, null);
+        } finally {
+            session.close();
+        }
+        return new Response(ResultCode.SUCCESS_200.code, "Sabha successfully created!", null, null, null);
+    }
+
+    @Override
+    public Response getSabhaDetails() {
+        return null;
     }
 }

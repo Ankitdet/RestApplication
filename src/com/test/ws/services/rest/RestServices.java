@@ -219,12 +219,40 @@ public class RestServices {
 
     @GET
     @Path("/getArea")
-    public  Response getArea() {
+    public Response getArea() {
         LoginServiceImpl blManager = new LoginServiceImpl();
         Response response = null;
         Logger.logInfo(MODULE, "Method called getArea() of " + CLASS);
         try {
             response = blManager.getArea();
+        } catch (NumberFormatException ne) {
+            return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, "Can't convert from String", null);
+        }
+        return response;
+    }
+
+    @POST
+    @Path("/createSabha")
+    public Response doCreateSabha() {
+        LoginServiceImpl blManager = new LoginServiceImpl();
+        Response response = null;
+        Logger.logInfo(MODULE, "Method called doCreateSabha() of " + CLASS);
+        try {
+            response = blManager.doCreateSabha();
+        } catch (NumberFormatException ne) {
+            return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, "Can't convert from String", null);
+        }
+        return response;
+    }
+
+    @POST
+    @Path("/getSabhaDetails")
+    public Response getSabhaDetails() {
+        LoginServiceImpl blManager = new LoginServiceImpl();
+        Response response = null;
+        Logger.logInfo(MODULE, "Method called getSabhaDetails() of " + CLASS);
+        try {
+            response = blManager.getSabhaDetails();
         } catch (NumberFormatException ne) {
             return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, "Can't convert from String", null);
         }

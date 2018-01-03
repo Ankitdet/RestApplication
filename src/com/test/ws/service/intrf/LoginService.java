@@ -16,4 +16,8 @@ public interface LoginService {
     Response getManadal();
 
     Response getArea();
+
+    Response doCreateSabha();
+
+    Response getSabhaDetails();
 }

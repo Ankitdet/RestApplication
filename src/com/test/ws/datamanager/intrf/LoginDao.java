@@ -19,4 +19,8 @@ public interface LoginDao {
 	Response getArea();
 
 	Response getManadal();
+
+	Response doCreateSabha();
+
+	Response getSabhaDetails();
 }

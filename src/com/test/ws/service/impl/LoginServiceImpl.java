@@ -150,4 +150,38 @@ public class LoginServiceImpl implements LoginService {
 		return response;
 	}
 
+	@Override
+	public Response doCreateSabha() {
+		LoginDao loginDao = new LoginDaoImpl();
+		Response response = new Response();
+		Logger.logDebug("Test", "Enter into getSSP() method of "+CLASS);
+
+		try {
+			response = loginDao.doCreateSabha();
+		} catch (InfrastructureException ex) {
+			return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, null, null);
+		} catch (BusinessException ex) {
+			return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, null, null);
+		} finally {
+		}
+		return response;
+	}
+
+	@Override
+	public Response getSabhaDetails() {
+		LoginDao loginDao = new LoginDaoImpl();
+		Response response = new Response();
+		Logger.logDebug("Test", "Enter into getSabhaDetails() method of "+CLASS);
+
+		try {
+			response = loginDao.getSabhaDetails();
+		} catch (InfrastructureException ex) {
+			return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, null, null);
+		} catch (BusinessException ex) {
+			return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, null, null);
+		} finally {
+		}
+		return response;
+	}
+
 }
