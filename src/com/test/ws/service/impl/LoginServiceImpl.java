@@ -8,6 +8,7 @@ import com.test.ws.constant.ResultCode;
 import com.test.ws.datamanager.impl.LoginDaoImpl;
 import com.test.ws.datamanager.intrf.LoginDao;
 import com.test.ws.entities.Users;
+import com.test.ws.entities.UsersFieldData;
 import com.test.ws.exception.BusinessException;
 import com.test.ws.exception.CommandException;
 import com.test.ws.exception.InfrastructureException;
@@ -21,7 +22,8 @@ import org.joda.time.format.DateTimeFormatter;
 
 public class LoginServiceImpl implements LoginService {
 
-	public static final String CLASS = LoginServiceImpl.class.getSimpleName();
+	public static final String CLASS = LoginServiceImpl.class.getName();
+	public static final String MODULE = LoginServiceImpl.class.getSimpleName();
 	
 	@Override
 	public Response validateLogin(String email,String password) throws CommandException, ParseException {
@@ -48,29 +50,34 @@ public class LoginServiceImpl implements LoginService {
 	}
 
 	@Override
-	public Response getBirthday(String cakeId) {
+	public Response getBirthday(String cakeId) throws CommandException {
 		String message = "";
 		LoginResponse loginResponse = null;
 		LoginDao loginDao = new LoginDaoImpl();
-		Logger.logDebug("Test", "Enter into create method of "+CLASS);
+		List<UsersFieldData> list = null;
+		Logger.logDebug("Test", "Enter into create method of " + CLASS);
 
-		try{
+		try {
 			Long myBirthdayDigit = Long.valueOf(cakeId);
+			list = loginDao.getBirthday(cakeId);
+		} catch (InfrastructureException ex) {
+			throw new InfrastructureException(ex);
+		} catch (BusinessException ex) {
+			throw new BusinessException(ex);
+		} finally {
 
-			List<Users> list = loginDao.getBirthday(cakeId);
-
-		}catch (SQLException e){
-
-		} catch (CommandException e) {
-			e.printStackTrace();
 		}
-
+		if(!list.isEmpty()){
+			return new Response(ResultCode.SUCCESS_200.code, "successfully get data", null, null, list);
+		}else{
+			return new Response(ResultCode.SUCCESS_200.code, "No record found", null, null, list);
+		}
 
 	}
 
 	public Response getUserContactList() throws CommandException, ParseException {
 		LoginDao loginDao = new LoginDaoImpl();
-		List<Users> list = null;
+		List<UsersFieldData> list = null;
 		Logger.logDebug("Test", "Enter into getUserContactList() method of "+CLASS);
 	
 		try {
@@ -91,4 +98,56 @@ public class LoginServiceImpl implements LoginService {
 		DateTimeFormatter dateTimeFormatter = DateTimeFormat.forPattern("YYYY-MM-DD HH:mm:ss");
 		System.out.println("dateTimeFormatter:" +dateTimeFormatter);
 	}
+
+	@Override
+	public Response getSSP() {
+		LoginDao loginDao = new LoginDaoImpl();
+		Response response = new Response();
+		Logger.logDebug("Test", "Enter into getSSP() method of "+CLASS);
+
+		try {
+			response = loginDao.getSSP();
+		} catch (InfrastructureException ex) {
+			return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, null, null);
+		} catch (BusinessException ex) {
+			return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, null, null);
+		} finally {
+		}
+		return response;
+	}
+
+	@Override
+	public Response getManadal() {
+		LoginDao loginDao = new LoginDaoImpl();
+		Response response = new Response();
+		Logger.logDebug("Test", "Enter into getSSP() method of "+CLASS);
+
+		try {
+			response = loginDao.getManadal();
+		} catch (InfrastructureException ex) {
+			return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, null, null);
+		} catch (BusinessException ex) {
+			return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, null, null);
+		} finally {
+		}
+		return response;
+	}
+
+	@Override
+	public Response getArea() {
+		LoginDao loginDao = new LoginDaoImpl();
+		Response response = new Response();
+		Logger.logDebug("Test", "Enter into getSSP() method of "+CLASS);
+
+		try {
+			response = loginDao.getArea();
+		} catch (InfrastructureException ex) {
+			return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, null, null);
+		} catch (BusinessException ex) {
+			return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, null, null);
+		} finally {
+		}
+		return response;
+	}
+
 }

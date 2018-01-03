@@ -9,5 +9,11 @@ public interface LoginService {
 
 	Response validateLogin(String email, String password) throws CommandException, ParseException;
 
-    Response getBirthday(String cakeId);
+    Response getBirthday(String cakeId) throws CommandException;
+
+    Response getSSP();
+
+    Response getManadal();
+
+    Response getArea();
 }

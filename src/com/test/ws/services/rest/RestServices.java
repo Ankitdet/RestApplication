@@ -34,6 +34,7 @@ public class RestServices {
 
     private static final String MODULE = "RestServices";
     private static final String UPLOAD_FOLDER = "/opt/uploadedFiles/";
+    public static final String CLASS = RestServices.class.getSimpleName();
 
     /**
      * To get Method name
@@ -52,7 +53,8 @@ public class RestServices {
 
         LoginServiceImpl blManager = new LoginServiceImpl();
         Response response = null;
-        Logger.logInfo(MODULE, "Method called login() with Login request: "
+        Logger.logInfo(MODULE, "Method called login() of "+CLASS);
+        Logger.logInfo(MODULE, "Method called login() with LogLin request: "
                 + email + "and " + password);
 
         try {
@@ -164,7 +166,9 @@ public class RestServices {
         return "unknownFile";
     }
 
-    private Response getBirthday(@QueryParam("cakeId") String cakeId) {
+    @GET
+    @Path("/getBirthday")
+    public Response getBirthday(@QueryParam("id") String cakeId) {
         LoginServiceImpl blManager = new LoginServiceImpl();
         Response response = null;
         Logger.logInfo(MODULE, "Method called getBirthday() of ");
@@ -173,35 +177,57 @@ public class RestServices {
             if (cakeId == null || cakeId.trim() == "") {
                 return new Response(ResultCode.NOT_FOUND_404.code, ResultCode.NOT_FOUND_404.name, null, "id not found", null);
             }
-            blManager.getBirthday(cakeId);
+            response = blManager.getBirthday(cakeId);
 
         } catch (NumberFormatException ne) {
-
-        } catch (ParseException pe) {
-            try {
-                return new Response(ResultCode.NOT_FOUND_404.code, ResultCode.NOT_FOUND_404.name, null, "can't parse data", null);
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
-
+            return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, "Can't convert from String", null);
+        } catch (CommandException e) {
+            return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, "Can't convert from String", null);
         }
-        return null;
+        return response;
     }
 
-    private Response getSSP() {
-        return null;
+    @GET
+    @Path("/getSSP")
+    public  Response getSSP() {
+
+        LoginServiceImpl blManager = new LoginServiceImpl();
+        Response response = null;
+        Logger.logInfo(MODULE, "Method called getSSP() of " + CLASS);
+        try {
+            response = blManager.getSSP();
+        } catch (NumberFormatException ne) {
+            return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, "Can't convert from String", null);
+        }
+        return response;
     }
 
+
+    @GET
+    @Path("/getMandal")
+    public  Response getManadal() {
+        LoginServiceImpl blManager = new LoginServiceImpl();
+        Response response = null;
+        Logger.logInfo(MODULE, "Method called getManadal() of " + CLASS);
+        try {
+            response = blManager.getManadal();
+        } catch (NumberFormatException ne) {
+            return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, "Can't convert from String", null);
+        }
+        return response;
+    }
+
+    @GET
+    @Path("/getArea")
+    public  Response getArea() {
+        LoginServiceImpl blManager = new LoginServiceImpl();
+        Response response = null;
+        Logger.logInfo(MODULE, "Method called getArea() of " + CLASS);
+        try {
+            response = blManager.getArea();
+        } catch (NumberFormatException ne) {
+            return new Response(ResultCode.INTERNAL_ERROR_500.code, ResultCode.INTERNAL_ERROR_500.name, null, "Can't convert from String", null);
+        }
+        return response;
+    }
 }
-
-// https://svn.apache.org/repos/asf/cxf/trunk/systests/jaxrs/src/test/java/org/apache/cxf/systest/jaxrs/JAXRSMultipartTest.java
-// Downloading PDF file : https://www.javatips.net/blog/download-pdf-file-using-cxf-rest-jax-rs
-
-/**
- * listssp = getAll SSP in list
- * list mandals = getAll Mandal list
- * listcontacts = getAll contact list
- * listbdate = birth day list
- * listsabha
- * listsabhayuvaks
- **/
