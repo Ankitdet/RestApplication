@@ -29,11 +29,12 @@
                         <entry key="xml" value="application/xml" />
         </jaxrs:extensionMappings>
         <jaxrs:providers>
+                        <ref bean="jsonResolver"/>
                         <ref bean='jacksonProvider' />
                         <ref bean="MyInterceptor"/>
                         <ref bean="dataManagerExceptionMapper"/>
                         <ref bean="jaxbProvider"/>
-                        <ref bean="jsonResolver"/>
+
         </jaxrs:providers>
     </jaxrs:server>
 

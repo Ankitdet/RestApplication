@@ -7,11 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="3d814777-af21-4241-9faa-42b2df5f01ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/test/ws/utils/JSONResolver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-databind-2.1.4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test/ws/utils/BusinessExceptionMapper.java" afterPath="$PROJECT_DIR$/src/com/test/ws/utils/BusinessExceptionMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test/ws/utils/WebServiceRequestInterceptor.java" afterPath="$PROJECT_DIR$/src/com/test/ws/utils/WebServiceRequestInterceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test/ws/utils/JacksonJaxbJsonProvider.java" afterPath="$PROJECT_DIR$/src/com/test/ws/utils/JacksonJaxbJsonProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/restservice.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/restservice.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,8 +48,8 @@
       <file leaf-file-name="WebServiceRequestInterceptor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/WebServiceRequestInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+            <state relative-caret-position="182">
+              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,31 +57,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HibernateUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/HibernateUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="restservice.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/restservice.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="213">
+              <caret line="19" column="60" lean-forward="false" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAXBElementProvider.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/jaxrs/provider/JAXBElementProvider.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="66" column="13" lean-forward="false" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -90,13 +80,23 @@
       <file leaf-file-name="JSONResolver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/JSONResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+            <state relative-caret-position="187">
+              <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#930#931#0" expanded="true" />
                 <element signature="e#970#971#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonSerializer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/jackson-all-1.9.0.jar!/org/codehaus/jackson/map/JsonSerializer.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,24 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContextListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/ContextListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding>
-                <element signature="method#contextDestroyed#0;class#ContextListener#0" expanded="false" />
-                <marker date="1515066169933" expanded="true" signature="1656:1684" ph="select auth_... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BusinessExceptionMapper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BusinessExceptionMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/BusinessExceptionMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+            <state relative-caret-position="182">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,66 +123,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MediaType.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/core/MediaType.class">
+      <file leaf-file-name="JacksonJaxbJsonProvider.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/JacksonJaxbJsonProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+            <state relative-caret-position="185">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <element signature="e#1666#1667#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjectMapper.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/jackson-all-1.9.0.jar!/org/codehaus/jackson/map/ObjectMapper.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="258" column="24" lean-forward="false" selection-start-line="258" selection-start-column="24" selection-end-line="258" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <file leaf-file-name="SerializerProvider.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/jackson-all-1.9.0.jar!/org/codehaus/jackson/map/SerializerProvider.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="47" column="58" lean-forward="false" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
-              <folding>
-                <marker date="1515067740532" expanded="true" signature="76519:76536" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="76519:76554" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="76519:76567" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="76519:76582" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="76617:79519" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="76630:79504" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="76684:77330" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="76703:77315" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="76731:76983" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="76758:76954" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="77072:77295" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="77112:77261" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="77133:77239" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="77380:77692" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="77399:77677" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="77479:77657" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="77519:77623" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="77540:77601" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="77743:78067" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="77762:78052" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="77854:78032" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="77894:77998" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="77915:77976" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78110:78421" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78129:78406" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78208:78386" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78248:78352" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78269:78330" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78472:78780" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78491:78765" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78567:78745" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78607:78711" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78628:78689" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78815:79126" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78834:79111" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78913:79091" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78953:79057" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="78974:79035" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="79178:79490" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="79197:79475" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="79271:79455" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="79311:79421" ph="..." />
-                <marker date="1515067740532" expanded="true" signature="79332:79399" ph="..." />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -264,10 +219,11 @@
         <option value="$PROJECT_DIR$/src/com/test/ws/datamanager/impl/LoginDaoImpl.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/com/test/ws/utils/JSONResolver.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/restservice.xml" />
         <option value="$PROJECT_DIR$/src/com/test/ws/utils/WebServiceRequestInterceptor.java" />
         <option value="$PROJECT_DIR$/src/com/test/ws/utils/BusinessExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/restservice.xml" />
+        <option value="$PROJECT_DIR$/src/com/test/ws/utils/JacksonJaxbJsonProvider.java" />
+        <option value="$PROJECT_DIR$/src/com/test/ws/utils/JSONResolver.java" />
       </list>
     </option>
   </component>
@@ -358,6 +314,24 @@
               <item name="ws" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trunk" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -372,7 +346,7 @@
     <property name="project.structure.side.proportion" value="0.2030303" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.2.Final.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/jackson-databind-2.1.4.jar!/" />
     <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -670,7 +644,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56592000" />
+    <option name="totallyTimeSpent" value="59898000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -781,190 +755,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="48" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/test/ws/utils/JacksonJaxbJsonProvider.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/javax.ws.rs-api-2.0-m10.jar!/javax/ws/rs/client/Entity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.11.Final.jar!/META-INF/maven/org.jboss.resteasy/resteasy-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.11.Final.jar!/META-INF/services/javax.ws.rs.client.ClientBuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.11.Final.jar!/org/jboss/resteasy/client/jaxrs/ResteasyClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-transports-http-2.1.3.jar!/org/apache/cxf/transport/servlet/CXFNonSpringServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-transports-http-2.1.3.jar!/org/apache/cxf/transport/servlet/ServletController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/core/Configuration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.2.Final.jar!/org/jboss/resteasy/client/jaxrs/internal/ClientConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="43" column="50" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/jaxrs/JAXRSInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/transport/servlet/ServletController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/transport/servlet/CXFNonSpringServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/client/ClientBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-          <folding>
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1774#1775#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/services/rest/RestServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/transport/ChainInitiationObserver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../software/jdk1.8.0_91/src.zip!/java/net/PlainSocketImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="106" column="52" lean-forward="true" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/jaxrs/utils/JAXRSUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="1060" column="0" lean-forward="false" selection-start-line="1060" selection-start-column="0" selection-end-line="1060" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/phase/PhaseInterceptorChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="193" column="62" lean-forward="false" selection-start-line="193" selection-start-column="62" selection-end-line="193" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/requestobject/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/ext/ExceptionMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/jaxrs/interceptor/JAXRSInInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/DemoAbstract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/core/Response.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="191" column="8" lean-forward="false" selection-start-line="191" selection-start-column="8" selection-end-line="191" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/ws/datamanager/impl/LoginDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
@@ -1000,49 +803,49 @@
         <state relative-caret-position="280">
           <caret line="47" column="58" lean-forward="false" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
           <folding>
-            <marker date="1515067740532" expanded="true" signature="76519:76536" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="76519:76554" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="76519:76567" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="76519:76582" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="76617:79519" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="76630:79504" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="76684:77330" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="76703:77315" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="76731:76983" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="76758:76954" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="77072:77295" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="77112:77261" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="77133:77239" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="77380:77692" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="77399:77677" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="77479:77657" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="77519:77623" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="77540:77601" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="77743:78067" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="77762:78052" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="77854:78032" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="77894:77998" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="77915:77976" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78110:78421" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78129:78406" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78208:78386" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78248:78352" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78269:78330" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78472:78780" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78491:78765" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78567:78745" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78607:78711" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78628:78689" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78815:79126" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78834:79111" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78913:79091" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78953:79057" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="78974:79035" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="79178:79490" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="79197:79475" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="79271:79455" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="79311:79421" ph="..." />
-            <marker date="1515067740532" expanded="true" signature="79332:79399" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85604:85621" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85604:85639" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85604:85652" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85604:85667" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85702:88604" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85715:88589" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85769:86415" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85788:86400" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85816:86068" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85843:86039" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86157:86380" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86197:86346" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86218:86324" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86465:86777" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86484:86762" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86564:86742" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86604:86708" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86625:86686" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86828:87152" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86847:87137" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86939:87117" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86979:87083" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87000:87061" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87195:87506" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87214:87491" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87293:87471" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87333:87437" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87354:87415" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87557:87865" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87576:87850" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87652:87830" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87692:87796" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87713:87774" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87900:88211" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87919:88196" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87998:88176" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88038:88142" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88059:88120" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88263:88575" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88282:88560" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88356:88540" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88396:88506" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88417:88484" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1122,10 +925,352 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/BusinessExceptionMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="76">
           <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/javax.ws.rs-api-2.0-m10.jar!/javax/ws/rs/client/Entity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.11.Final.jar!/META-INF/maven/org.jboss.resteasy/resteasy-client/pom.xml" />
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.11.Final.jar!/META-INF/services/javax.ws.rs.client.ClientBuilder" />
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.11.Final.jar!/org/jboss/resteasy/client/jaxrs/ResteasyClient.class" />
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-transports-http-2.1.3.jar!/org/apache/cxf/transport/servlet/CXFNonSpringServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-transports-http-2.1.3.jar!/org/apache/cxf/transport/servlet/ServletController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/core/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.2.Final.jar!/org/jboss/resteasy/client/jaxrs/internal/ClientConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="43" column="50" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/jaxrs/JAXRSInvoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/transport/servlet/ServletController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/transport/servlet/CXFNonSpringServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/client/ClientBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="e#1731#1732#0" expanded="true" />
+            <element signature="e#1774#1775#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/services/rest/RestServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/transport/ChainInitiationObserver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../software/jdk1.8.0_91/src.zip!/java/net/PlainSocketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="106" column="52" lean-forward="true" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/jaxrs/utils/JAXRSUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="1060" column="0" lean-forward="false" selection-start-line="1060" selection-start-column="0" selection-end-line="1060" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/phase/PhaseInterceptorChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="193" column="62" lean-forward="false" selection-start-line="193" selection-start-column="62" selection-end-line="193" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/requestobject/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/ext/ExceptionMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/jaxrs/interceptor/JAXRSInInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/DemoAbstract.java" />
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/core/Response.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="191" column="8" lean-forward="false" selection-start-line="191" selection-start-column="8" selection-end-line="191" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/datamanager/impl/LoginDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="318" column="5" lean-forward="false" selection-start-line="318" selection-start-column="5" selection-end-line="318" selection-end-column="5" />
+          <folding>
+            <marker date="1515066339084" expanded="true" signature="863:1494" ph="select u.id,... users" />
+            <marker date="1515066339084" expanded="true" signature="2027:2106" ph="select * fro... users" />
+            <marker date="1515066339084" expanded="true" signature="2396:2505" ph="update users... " />
+            <marker date="1515066339084" expanded="true" signature="2640:2809" ph="select u.fir... users" />
+            <marker date="1515066339084" expanded="true" signature="5721:5820" ph="select u.id,... users" />
+            <marker date="1515066339084" expanded="true" signature="5917:6016" ph="select u.id,... users" />
+            <marker date="1515066339084" expanded="true" signature="6113:6214" ph="select u.id,... users" />
+            <marker date="1515066339084" expanded="true" signature="6311:6412" ph="select u.id,... users" />
+            <marker date="1515066339084" expanded="true" signature="6509:6610" ph="select u.id,... users" />
+            <marker date="1515066339084" expanded="true" signature="7318:7350" ph="select ssp_i... ssp" />
+            <marker date="1515066339084" expanded="true" signature="8288:8324" ph="select area_... areas" />
+            <marker date="1515066339084" expanded="true" signature="9298:9340" ph="select manda... mandals" />
+            <marker date="1515066339084" expanded="true" signature="12793:12892" ph="insert into sabhas... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/constant/ResultCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="47" column="58" lean-forward="false" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
+          <folding>
+            <marker date="1515072663680" expanded="true" signature="85604:85621" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85604:85639" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85604:85652" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85604:85667" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85702:88604" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85715:88589" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85769:86415" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85788:86400" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85816:86068" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="85843:86039" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86157:86380" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86197:86346" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86218:86324" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86465:86777" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86484:86762" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86564:86742" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86604:86708" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86625:86686" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86828:87152" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86847:87137" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86939:87117" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="86979:87083" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87000:87061" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87195:87506" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87214:87491" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87293:87471" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87333:87437" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87354:87415" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87557:87865" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87576:87850" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87652:87830" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87692:87796" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87713:87774" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87900:88211" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87919:88196" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="87998:88176" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88038:88142" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88059:88120" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88263:88575" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88282:88560" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88356:88540" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88396:88506" ph="..." />
+            <marker date="1515072663680" expanded="true" signature="88417:88484" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/HibernateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/ContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="method#contextDestroyed#0;class#ContextListener#0" expanded="false" />
+            <marker date="1515066169933" expanded="true" signature="1656:1684" ph="select auth_... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/core/MediaType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/TokenGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/WebServiceRequestInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/BusinessExceptionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/jaxrs/provider/JAXBElementProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="66" column="13" lean-forward="false" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/restservice.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="19" column="60" lean-forward="false" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/jackson-all-1.9.0.jar!/org/codehaus/jackson/map/JsonSerializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/jackson-all-1.9.0.jar!/org/codehaus/jackson/map/SerializerProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/jackson-all-1.9.0.jar!/org/codehaus/jackson/map/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="258" column="24" lean-forward="false" selection-start-line="258" selection-start-column="24" selection-end-line="258" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/JSONResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/JacksonJaxbJsonProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#1666#1667#0" expanded="true" />
           </folding>
         </state>
       </provider>
