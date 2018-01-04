@@ -13,7 +13,7 @@ public class BusinessExceptionMapper implements ExceptionMapper<BusinessExceptio
 
     @Override
     public Response toResponse(BusinessException e) {
-        com.test.ws.requestobject.Response responseObject = new com.test.ws.requestobject.Response(ResultCode.NOT_FOUND_404.code
+        com.test.ws.requestobject.Response responseObject = new com.test.ws.requestobject.Response(ResultCode.INTERNAL_ERROR_500.code
                 ,ResultCode.INTERNAL_ERROR_500.name,null,e.getMessage(),null);
             Response.ResponseBuilder r = Response.status(Response.Status.BAD_REQUEST);
         r.type(MediaType.APPLICATION_JSON);
