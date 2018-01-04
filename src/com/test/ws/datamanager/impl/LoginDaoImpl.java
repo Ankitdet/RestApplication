@@ -78,6 +78,7 @@ public class LoginDaoImpl implements LoginDao {
                     loginResponse.setuType(String.valueOf((Integer) ob[6]));
                     loginResponse.setuId(String.valueOf(user_id));
                 }
+                TokenGenerator.tokenMap.put(loginResponse.getToken(),loginResponse.getToken());
             } else {
                 return null;
             }

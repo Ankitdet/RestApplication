@@ -1,18 +1,16 @@
 package com.test.ws.utils;
 
 import java.security.SecureRandom;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 public class TokenGenerator {
 
-	protected static SecureRandom random = new SecureRandom();
-
-	public synchronized static String generateToken(String username) {
-		long longToken = Math.abs(random.nextLong());
-		String random = Long.toString(longToken, 16);
-		return (username + ":" + random);
+	public static Map<String,String> tokenMap = null;
+	static {
+		tokenMap = new HashMap<String, String>();
 	}
-
 	public static String uniqueUUID() {
 		return UUID.randomUUID().toString().replaceAll("-", "");
 	}

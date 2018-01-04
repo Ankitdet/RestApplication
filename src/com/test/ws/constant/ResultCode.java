@@ -7,7 +7,7 @@ public enum ResultCode {
 
 	SUCCESS_200(200, "SUCCESS"),
  	INPUT_PARAMETER_MISSING_401(401, "Required Input Parameter Missing/Invalid Parameter"), // Missing parameter
- 	NOT_FOUND_404(404, "not found"),
+ 	NOT_FOUND_404(404, "Request parameter not found"),
 	ALREADY_EXIST_450(450, "already exist"),
 	INTERNAL_ERROR_500(500, "Internal Server Error"), // DB Query failed
 	SERVICE_UNAVAILABLE_503(503, "Service unavailable"),

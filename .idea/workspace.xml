@@ -6,17 +6,24 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="3d814777-af21-4241-9faa-42b2df5f01ca" name="Default" comment="">
+    <list default="true" readonly="true" id="3d814777-af21-4241-9faa-42b2df5f01ca" name="Default" comment="Add UserFiled data for native sql query support">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jersey-common-2.0-m12-1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.2.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/resteasy-jaxrs-3.0.3.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/test/ws/utils/BusinessExceptionMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/test/ws/utils/WebServiceRequestInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-core-2.6.1.jar" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-core-2.6.1.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-transports-http-2.1.3.jar" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-transports-http-2.1.3.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/lib/ws/jaxb-api-2.2.6.jar" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/ws/jaxb-api-2.2.6.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/ws.xml" afterPath="$PROJECT_DIR$/.idea/libraries/ws.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test/ws/constant/ResultCode.java" afterPath="$PROJECT_DIR$/src/com/test/ws/constant/ResultCode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test/ws/datamanager/impl/LoginDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/test/ws/datamanager/impl/LoginDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test/ws/datamanager/intrf/LoginDao.java" afterPath="$PROJECT_DIR$/src/com/test/ws/datamanager/intrf/LoginDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test/ws/service/impl/LoginServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/test/ws/service/impl/LoginServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test/ws/service/intrf/LoginService.java" afterPath="$PROJECT_DIR$/src/com/test/ws/service/intrf/LoginService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test/ws/services/rest/RestServices.java" afterPath="$PROJECT_DIR$/src/com/test/ws/services/rest/RestServices.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk.iml" afterPath="$PROJECT_DIR$/trunk.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test/ws/utils/ContextListener.java" afterPath="$PROJECT_DIR$/src/com/test/ws/utils/ContextListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test/ws/utils/TokenGenerator.java" afterPath="$PROJECT_DIR$/src/com/test/ws/utils/TokenGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/restservice.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/restservice.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,6 +45,10 @@
     <expand />
     <select />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
   <component name="ExportToHTMLSettings">
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
@@ -45,59 +56,14 @@
     <favorites_list name="trunk" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/ws/service/impl/LoginServiceImpl.java">
+    <leaf>
+      <file leaf-file-name="WebServiceRequestInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/WebServiceRequestInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="176" column="47" lean-forward="false" selection-start-line="176" selection-start-column="47" selection-end-line="176" selection-end-column="47" />
+            <state relative-caret-position="347">
+              <caret line="25" column="79" lean-forward="false" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/ws/datamanager/intrf/LoginDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginDaoImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/test/ws/datamanager/impl/LoginDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="177" column="47" lean-forward="true" selection-start-line="177" selection-start-column="47" selection-end-line="177" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4381#4397#0" expanded="true" />
-                <element signature="e#5299#5315#0" expanded="true" />
-                <element signature="e#8139#8146#0" expanded="true" />
-                <element signature="e#9147#9156#0" expanded="true" />
-                <element signature="e#10514#10530#0" expanded="true" />
-                <element signature="e#12642#12651#0" expanded="true" />
-                <element signature="e#13278#13279#0" expanded="true" />
-                <element signature="e#13305#13306#0" expanded="true" />
-                <marker date="1514985930542" expanded="true" signature="863:1494" ph="select u.id,... users" />
-                <marker date="1514985930542" expanded="true" signature="2027:2106" ph="select * fro... users" />
-                <marker date="1514985930542" expanded="true" signature="2396:2505" ph="update users... " />
-                <marker date="1514985930542" expanded="true" signature="2640:2809" ph="select u.fir... users" />
-                <marker date="1514985930542" expanded="true" signature="5625:5724" ph="select u.id,... users" />
-                <marker date="1514985930542" expanded="true" signature="5821:5920" ph="select u.id,... users" />
-                <marker date="1514985930542" expanded="true" signature="6017:6118" ph="select u.id,... users" />
-                <marker date="1514985930542" expanded="true" signature="6215:6316" ph="select u.id,... users" />
-                <marker date="1514985930542" expanded="true" signature="6413:6514" ph="select u.id,... users" />
-                <marker date="1514985930542" expanded="true" signature="7222:7254" ph="select ssp_i... ssp" />
-                <marker date="1514985930542" expanded="true" signature="8192:8228" ph="select area_... areas" />
-                <marker date="1514985930542" expanded="true" signature="9202:9244" ph="select manda... mandals" />
-                <marker date="1514985930542" expanded="true" signature="12697:12796" ph="insert into sabhas... " />
               </folding>
             </state>
           </provider>
@@ -106,28 +72,55 @@
       <file leaf-file-name="restservice.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/restservice.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="16" column="66" lean-forward="true" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+            <state relative-caret-position="663">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core.xsd" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-core-2.6.1.jar!/schemas/core.xsd">
+      <file leaf-file-name="ContextListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/ContextListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="84" column="2" lean-forward="false" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="2" />
-              <folding />
+            <state relative-caret-position="427">
+              <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding>
+                <element signature="method#contextDestroyed#0;class#ContextListener#0" expanded="false" />
+                <marker date="1515066169933" expanded="true" signature="1656:1684" ph="select auth_... users" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebServiceRequestInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/WebServiceRequestInterceptor.java">
+      <file leaf-file-name="LoginDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/ws/datamanager/impl/LoginDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="373">
+              <caret line="318" column="5" lean-forward="true" selection-start-line="318" selection-start-column="5" selection-end-line="318" selection-end-column="5" />
+              <folding>
+                <marker date="1515066339084" expanded="true" signature="863:1494" ph="select u.id,... users" />
+                <marker date="1515066339084" expanded="true" signature="2027:2106" ph="select * fro... users" />
+                <marker date="1515066339084" expanded="true" signature="2396:2505" ph="update users... " />
+                <marker date="1515066339084" expanded="true" signature="2640:2809" ph="select u.fir... users" />
+                <marker date="1515066339084" expanded="true" signature="5721:5820" ph="select u.id,... users" />
+                <marker date="1515066339084" expanded="true" signature="5917:6016" ph="select u.id,... users" />
+                <marker date="1515066339084" expanded="true" signature="6113:6214" ph="select u.id,... users" />
+                <marker date="1515066339084" expanded="true" signature="6311:6412" ph="select u.id,... users" />
+                <marker date="1515066339084" expanded="true" signature="6509:6610" ph="select u.id,... users" />
+                <marker date="1515066339084" expanded="true" signature="7318:7350" ph="select ssp_i... ssp" />
+                <marker date="1515066339084" expanded="true" signature="8288:8324" ph="select area_... areas" />
+                <marker date="1515066339084" expanded="true" signature="9298:9340" ph="select manda... mandals" />
+                <marker date="1515066339084" expanded="true" signature="12793:12892" ph="insert into sabhas... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BusinessExceptionMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/BusinessExceptionMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="16" column="58" lean-forward="false" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,34 +128,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <file leaf-file-name="ResultCode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/ws/constant/ResultCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="32" column="62" lean-forward="false" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+            <state relative-caret-position="85">
+              <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContainerRequestFilter.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/javax.ws.rs-api-2.0-m10.jar!/javax/ws/rs/container/ContainerRequestFilter.class">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContainerRequestContext.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/javax.ws.rs-api-2.0-m10.jar!/javax/ws/rs/container/ContainerRequestContext.class">
+      <file leaf-file-name="JSONResolver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/JSONResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="40" />
+            <state relative-caret-position="300">
+              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TokenGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/TokenGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Response.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/core/Response.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="67">
+              <caret line="191" column="8" lean-forward="false" selection-start-line="191" selection-start-column="8" selection-end-line="191" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -209,12 +222,30 @@
         <option value="$PROJECT_DIR$/src/com/test/ws/service/intrf/LoginService.java" />
         <option value="$PROJECT_DIR$/src/com/test/ws/service/impl/LoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/test/ws/datamanager/intrf/LoginDao.java" />
-        <option value="$PROJECT_DIR$/src/com/test/ws/datamanager/impl/LoginDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/test/ws/utils/JaxRsAuthenticationInterceptor.java" />
         <option value="$PROJECT_DIR$/web/META-INF/cxf.xml" />
-        <option value="$PROJECT_DIR$/src/com/test/ws/utils/WebServiceRequestInterceptor.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.11.Final.jar!/org/jboss/resteasy/client/jaxrs/ResteasyClient.class" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/lib/ws/javax.ws.rs-api-2.0-m10.jar!/javax/ws/rs/client/Entity.class" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.11.Final.jar!/META-INF/services/javax.ws.rs.client.ClientBuilder" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.11.Final.jar!/META-INF/maven/org.jboss.resteasy/resteasy-client/pom.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/jaxrs/JAXRSInvoker.class" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/phase/PhaseInterceptorChain.class" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/transport/ChainInitiationObserver.class" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-transports-http-2.1.3.jar!/org/apache/cxf/transport/servlet/ServletController.class" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-transports-http-2.1.3.jar!/org/apache/cxf/transport/servlet/CXFNonSpringServlet.class" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/transport/servlet/CXFNonSpringServlet.class" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/transport/servlet/ServletController.class" />
+        <option value="$PROJECT_DIR$/src/com/test/ws/utils/DataManagerExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/test/ws/utils/JSONResolver.java" />
+        <option value="$PROJECT_DIR$/src/com/test/ws/utils/DemoAbstract.java" />
+        <option value="$PROJECT_DIR$/src/com/test/ws/constant/ResultCode.java" />
+        <option value="$PROJECT_DIR$/src/com/test/ws/utils/TokenGenerator.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/restservice.xml" />
+        <option value="$PROJECT_DIR$/src/com/test/ws/utils/ContextListener.java" />
+        <option value="$PROJECT_DIR$/src/com/test/ws/utils/BusinessExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/test/ws/utils/WebServiceRequestInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/com/test/ws/datamanager/impl/LoginDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -277,10 +308,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,78 +334,34 @@
               <item name="trunk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ws" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trunk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ws" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trunk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ws" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trunk" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trunk" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trunk" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; java 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; java 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trunk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; java 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="$USER_HOME$/software/node-v6.10.2-linux-x86/bin/node" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.2030303" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../hibernate-experimental-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.2.Final.jar!/" />
     <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/lib/ws" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -614,6 +600,7 @@
       <updated>1514612978851</updated>
       <workItem from="1514612984562" duration="19946000" />
       <workItem from="1514965377823" duration="5732000" />
+      <workItem from="1515058730639" duration="7787000" />
     </task>
     <task id="LOCAL-00001" summary="Changed method for stackTrace">
       <created>1514615373102</created>
@@ -647,7 +634,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47579000" />
+    <option name="totallyTimeSpent" value="55366000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -662,32 +649,31 @@
     <frame x="-231" y="25" width="1368" height="723" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Azure Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7966667" sideWeight="0.53933436" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.47579426" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Azure Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.5355522" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.4644478" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Azure Activity Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1172466" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52666664" sideWeight="0.46066564" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52666664" sideWeight="0.45763993" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.44326776" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.49394855" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="HDInsight Spark Submission" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44" sideWeight="0.7435703" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32833335" sideWeight="0.49092284" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.635" sideWeight="0.7435703" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.49092284" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.027231468" sideWeight="0.5327869" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2322239" sideWeight="0.46721312" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23600605" sideWeight="0.46721312" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.027231468" sideWeight="0.5327869" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Spark Job in Cluster" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -698,8 +684,49 @@
       <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1172466" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Azure Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52666664" sideWeight="0.54236007" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.47579426" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Azure Activity Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1172466" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52666664" sideWeight="0.45763993" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.44326776" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.49394855" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="HDInsight Spark Submission" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.635" sideWeight="0.7435703" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.49092284" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.49092284" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.027231468" sideWeight="0.5327869" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23600605" sideWeight="0.46721312" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.027231468" sideWeight="0.5327869" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Spark Job in Cluster" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug Remote Spark Job in Cluster" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.510101" order="9" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -717,495 +744,282 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/test/ws/service/impl/LoginServiceImpl.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/test/ws/datamanager/impl/LoginDaoImpl.java</url>
-          <line>131</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/test/ws/datamanager/impl/LoginDaoImpl.java</url>
-          <line>171</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/test/ws/datamanager/impl/LoginDaoImpl.java</url>
-          <line>299</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/test/ws/utils/WebServiceRequestInterceptor.java</url>
-          <line>13</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="33" />
+      <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/entities/UserSkills.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/javax.ws.rs-api-2.0-m10.jar!/javax/ws/rs/client/Entity.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="120">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.11.Final.jar!/META-INF/maven/org.jboss.resteasy/resteasy-client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-lang-1.0.1.jar!/org/apache/commons/lang/exception/ExceptionUtils.class">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.11.Final.jar!/META-INF/services/javax.ws.rs.client.ClientBuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-659">
-          <caret line="118" column="50" lean-forward="false" selection-start-line="118" selection-start-column="50" selection-end-line="118" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/exception/CustomTestException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/ContextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Entity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.classpath">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="275" column="21" lean-forward="true" selection-start-line="275" selection-start-column="21" selection-end-line="275" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trunk.iml">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.11.Final.jar!/org/jboss/resteasy/client/jaxrs/ResteasyClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="32" column="90" lean-forward="false" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="90" />
+        <state relative-caret-position="120">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/requestobject/LoginRequest.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-transports-http-2.1.3.jar!/org/apache/cxf/transport/servlet/CXFNonSpringServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="63">
+          <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../software/jdk1.8.0_91/src.zip!/com/sun/org/apache/bcel/internal/util/ClassPath.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-transports-http-2.1.3.jar!/org/apache/cxf/transport/servlet/ServletController.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="230" column="33" lean-forward="false" selection-start-line="230" selection-start-column="33" selection-end-line="230" selection-end-column="33" />
+        <state relative-caret-position="105">
+          <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../software/jdk1.8.0_91/src.zip!/java/lang/String.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/core/Configuration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="2992" column="25" lean-forward="false" selection-start-line="2992" selection-start-column="25" selection-end-line="2992" selection-end-column="25" />
+        <state relative-caret-position="85">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/resteasy-client-3.0.2.Final.jar!/org/jboss/resteasy/client/jaxrs/internal/ClientConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="43" column="50" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/jaxrs/JAXRSInvoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/transport/servlet/ServletController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/transport/servlet/CXFNonSpringServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/client/ClientBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
           <folding>
-            <element signature="e#117893#117894#0" expanded="false" />
-            <element signature="e#117955#117956#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="true" />
+            <element signature="e#1774#1775#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/hibernate-core-4.1.9.Final.jar!/org/hibernate/SharedSessionContract.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/entities/UserRoles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/joda-time-2.0.jar!/org/joda/time/DateTime.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/joda-time-2.0.jar!/org/joda/time/base/AbstractDateTime.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="51" column="15" lean-forward="false" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../software/jdk1.8.0_91/src.zip!/java/text/ParseException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="49" column="6" lean-forward="false" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/xboxlive_akdm.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="676" column="25" lean-forward="false" selection-start-line="676" selection-start-column="25" selection-end-line="676" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/requestobject/TestJodaTime.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/requestobject/LoginResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/constant/ResultCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/constant/ConfigConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/constant/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://Persistence/JavaeeElement:/9998d0d/hibernate.cfg.xml/trunk/hibernate/Hibernate/PersistenceModel">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Persistence</ID>
-          <OriginalElement>JavaeeElement:/9998d0d/hibernate.cfg.xml/trunk/hibernate/Hibernate/PersistenceModel</OriginalElement>
-          <nodes>
-            <node x="" y="">AttendanceId#file:///home/elitecore/backup/RestAPI/RestApplication.git/trunk/src/com/test/ws/entities/AttendanceId.java</node>
-            <node x="" y="">MyguestsId#file:///home/elitecore/backup/RestAPI/RestApplication.git/trunk/src/com/test/ws/entities/MyguestsId.java</node>
-            <node x="" y="">UserstatusId#file:///home/elitecore/backup/RestAPI/RestApplication.git/trunk/src/com/test/ws/entities/UserstatusId.java</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="206.0" y="134.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Embeddables</Category>
-            <Category>Properties</Category>
-            <Category>Superclasses</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/entities/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../software/jdk1.8.0_91/src.zip!/java/lang/Object.java">
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/services/rest/RestServices.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/entities/UserSkills.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/transport/ChainInitiationObserver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="67">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/entities/UsersFieldData.java">
+    <entry file="jar://$PROJECT_DIR$/../../../../software/jdk1.8.0_91/src.zip!/java/net/PlainSocketImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="e#3672#3673#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="127">
+          <caret line="106" column="52" lean-forward="true" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/service/invoker/AbstractInvoker.class">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/jaxrs/utils/JAXRSUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2320">
-          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+        <state relative-caret-position="145">
+          <caret line="1060" column="0" lean-forward="false" selection-start-line="1060" selection-start-column="0" selection-end-line="1060" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/phase/PhaseInterceptorChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="193" column="62" lean-forward="false" selection-start-line="193" selection-start-column="62" selection-end-line="193" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/ws/requestobject/Response.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        <state relative-caret-position="20">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../software/jdk1.8.0_91/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/ext/ExceptionMapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        <state relative-caret-position="95">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/sqldialects.xml" />
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/entities/Areas.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/cxf-2.7.1.jar!/org/apache/cxf/jaxrs/interceptor/JAXRSInInterceptor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="87">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/hibernate-core-4.1.9.Final.jar!/org/hibernate/dialect/MySQLInnoDBDialect.class">
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/DemoAbstract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="80">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/entities/UserstatusId.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/core/Response.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding>
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="67">
+          <caret line="191" column="8" lean-forward="false" selection-start-line="191" selection-start-column="8" selection-end-line="191" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/TokenGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/entities/Attendance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/services/rest/RestServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="254" column="48" lean-forward="false" selection-start-line="254" selection-start-column="48" selection-end-line="254" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1360#1361#0" expanded="true" />
-            <element signature="e#1440#1441#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/service/intrf/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/service/impl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="176" column="47" lean-forward="false" selection-start-line="176" selection-start-column="47" selection-end-line="176" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/ws/datamanager/intrf/LoginDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/META-INF/cxf.xml.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/javax.ws.rs-api-2.0-m10.jar!/javax/ws/rs/container/ContainerRequestContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/cxf-rt-core-2.6.1.jar!/schemas/core.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="84" column="2" lean-forward="false" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ws/javax.ws.rs-api-2.0-m10.jar!/javax/ws/rs/container/ContainerRequestFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="32" column="62" lean-forward="false" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/META-INF/cxf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="13" selection-end-column="14" />
+        <state relative-caret-position="117">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/restservice.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="16" column="66" lean-forward="true" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+        <state relative-caret-position="663">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/BusinessExceptionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="16" column="58" lean-forward="false" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/WebServiceRequestInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="347">
+          <caret line="25" column="79" lean-forward="false" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/JSONResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/utils/ContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <element signature="method#contextDestroyed#0;class#ContextListener#0" expanded="false" />
+            <marker date="1515066169933" expanded="true" signature="1656:1684" ph="select auth_... users" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/ws/datamanager/impl/LoginDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="177" column="47" lean-forward="true" selection-start-line="177" selection-start-column="47" selection-end-line="177" selection-end-column="47" />
+        <state relative-caret-position="373">
+          <caret line="318" column="5" lean-forward="true" selection-start-line="318" selection-start-column="5" selection-end-line="318" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4381#4397#0" expanded="true" />
-            <element signature="e#5299#5315#0" expanded="true" />
-            <element signature="e#8139#8146#0" expanded="true" />
-            <element signature="e#9147#9156#0" expanded="true" />
-            <element signature="e#10514#10530#0" expanded="true" />
-            <element signature="e#12642#12651#0" expanded="true" />
-            <element signature="e#13278#13279#0" expanded="true" />
-            <element signature="e#13305#13306#0" expanded="true" />
-            <marker date="1514985930542" expanded="true" signature="863:1494" ph="select u.id,... users" />
-            <marker date="1514985930542" expanded="true" signature="2027:2106" ph="select * fro... users" />
-            <marker date="1514985930542" expanded="true" signature="2396:2505" ph="update users... " />
-            <marker date="1514985930542" expanded="true" signature="2640:2809" ph="select u.fir... users" />
-            <marker date="1514985930542" expanded="true" signature="5625:5724" ph="select u.id,... users" />
-            <marker date="1514985930542" expanded="true" signature="5821:5920" ph="select u.id,... users" />
-            <marker date="1514985930542" expanded="true" signature="6017:6118" ph="select u.id,... users" />
-            <marker date="1514985930542" expanded="true" signature="6215:6316" ph="select u.id,... users" />
-            <marker date="1514985930542" expanded="true" signature="6413:6514" ph="select u.id,... users" />
-            <marker date="1514985930542" expanded="true" signature="7222:7254" ph="select ssp_i... ssp" />
-            <marker date="1514985930542" expanded="true" signature="8192:8228" ph="select area_... areas" />
-            <marker date="1514985930542" expanded="true" signature="9202:9244" ph="select manda... mandals" />
-            <marker date="1514985930542" expanded="true" signature="12697:12796" ph="insert into sabhas... " />
+            <marker date="1515066339084" expanded="true" signature="863:1494" ph="select u.id,... users" />
+            <marker date="1515066339084" expanded="true" signature="2027:2106" ph="select * fro... users" />
+            <marker date="1515066339084" expanded="true" signature="2396:2505" ph="update users... " />
+            <marker date="1515066339084" expanded="true" signature="2640:2809" ph="select u.fir... users" />
+            <marker date="1515066339084" expanded="true" signature="5721:5820" ph="select u.id,... users" />
+            <marker date="1515066339084" expanded="true" signature="5917:6016" ph="select u.id,... users" />
+            <marker date="1515066339084" expanded="true" signature="6113:6214" ph="select u.id,... users" />
+            <marker date="1515066339084" expanded="true" signature="6311:6412" ph="select u.id,... users" />
+            <marker date="1515066339084" expanded="true" signature="6509:6610" ph="select u.id,... users" />
+            <marker date="1515066339084" expanded="true" signature="7318:7350" ph="select ssp_i... ssp" />
+            <marker date="1515066339084" expanded="true" signature="8288:8324" ph="select area_... areas" />
+            <marker date="1515066339084" expanded="true" signature="9298:9340" ph="select manda... mandals" />
+            <marker date="1515066339084" expanded="true" signature="12793:12892" ph="insert into sabhas... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/ws/constant/ResultCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1226,7 +1040,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.2030303" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1271,7 +1085,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|trunk</last-edited>
+          <last-edited>trunk</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1295,11 +1109,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>ws</last-edited>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.2030303" />
               </list>
             </option>
           </splitter-proportions>

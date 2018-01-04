@@ -15,6 +15,10 @@
     <bean class="com.test.ws.services.rest.RestServices" id="RestPerson" />
     <bean id='jacksonProvider' class='com.test.ws.utils.JacksonJaxbJsonProvider'></bean>
     <bean id="MyInterceptor" class="com.test.ws.utils.WebServiceRequestInterceptor"/>
+    <bean id="dataManagerExceptionMapper" class="com.test.ws.utils.BusinessExceptionMapper"/>
+    <bean id="jaxbProvider" class="org.apache.cxf.jaxrs.provider.JAXBElementProvider" />
+    <bean id="jsonResolver" class="com.test.ws.utils.JSONResolver" />
+
 
     <jaxrs:server address="/restful/" id="Person">
         <jaxrs:serviceBeans>
@@ -27,6 +31,9 @@
         <jaxrs:providers>
                         <ref bean='jacksonProvider' />
                         <ref bean="MyInterceptor"/>
+                        <ref bean="dataManagerExceptionMapper"/>
+                        <ref bean="jaxbProvider"/>
+                        <ref bean="jsonResolver"/>
         </jaxrs:providers>
     </jaxrs:server>
 
